@@ -16,13 +16,23 @@
 # print('quotient is: ', quotient)
 # print('remindre is:', reminder)
 
+#
+# fee = 4535
+#
+# discount = 10
+#
+# get_dis = (discount/100)* fee
+#
+# print(get_dis)
+# amount_after_discount =  fee-get_dis
+# print(amount_after_discount)
 
-fee = 4535
 
-discount = 10
 
-get_dis = (discount/100)* fee
+num = int(input("Enter a number: "))
 
-print(get_dis)
-amount_after_discount =  fee-get_dis
-print(amount_after_discount)
+if (50>=num):
+    print("you filed")
+else:
+    print("you passed")
+
