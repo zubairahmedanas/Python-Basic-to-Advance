@@ -47,13 +47,19 @@
 #         break
 
 
-
-# lang = ["pyhton", "C", "C++", "Java"]
+# lang = ("pyhton", "C", "C++", "Java")
 #
-# lang.insert(2, "rust")
+# lang.pu="ddd"
 #
 # print(lang)
 
-text = "Python"
-text[0] = "p"
-print(text)
+# text = "talk is cheap. Show me the code"
+
+# print("1.",text[3])
+#
+# print("2", text.replace("code", "prgrm"))
+
+
+p1 = {"name": "anas", "dept": "cse"}
+print(p1.get("institute", ["NC","bits",'ti']))
+
