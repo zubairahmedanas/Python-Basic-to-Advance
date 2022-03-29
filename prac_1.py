@@ -9,7 +9,6 @@
 # print(type(num))
 
 
-
 # x  = 5
 # quotient = x//2
 # reminder = x%2
@@ -28,11 +27,29 @@
 # print(amount_after_discount)
 
 
+# num = int(input("Enter a number: "))
+#
+# if (0 == num):
+#     print("it is zero")
+# elif (num > 0):
+#     print("it is positive")
+# else:
+#     print("negative")
 
-num = int(input("Enter a number: "))
+# count = 10
+# number = int(input("pls enter a number: "))
+# while count<=10:
+#     product= number * count
+#     print( number, "x", count, "=", product)
+#     count =count-1
+#     # print(count)
+#     if count==0:
+#         break
 
-if (50>=num):
-    print("you filed")
-else:
-    print("you passed")
 
+
+lang = ["pyhton", "C", "C++", "Java"]
+
+lang.insert(2, "rust")
+
+print(lang)
