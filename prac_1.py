@@ -61,5 +61,11 @@
 
 
 p1 = {"name": "anas", "dept": "cse"}
-print(p1.get("institute", ["NC","bits",'ti']))
+# print(p1.get("institute", ["NC","bits",'ti']))
+p1["institute"]="bits","NC"
 
+# print(p1)
+# p1.pop("dept")
+# print(p1)
+for key in p1:
+    print(p1[key])
