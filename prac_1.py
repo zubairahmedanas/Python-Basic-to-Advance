@@ -48,8 +48,12 @@
 
 
 
-lang = ["pyhton", "C", "C++", "Java"]
+# lang = ["pyhton", "C", "C++", "Java"]
+#
+# lang.insert(2, "rust")
+#
+# print(lang)
 
-lang.insert(2, "rust")
-
-print(lang)
+text = "Python"
+text[0] = "p"
+print(text)
