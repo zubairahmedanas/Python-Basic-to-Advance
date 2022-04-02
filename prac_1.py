@@ -101,22 +101,37 @@ p1["institute"] = "bits", "NC"
 # student_2.marks = 33
 # result = student_2.chk_pass_fail()
 # print(result)
-class Complex:
+# class Complex:
+#
+#     def __init__(self, real, imag):
+#         self.real = real
+#         self.imag = imag
+#
+#     def add(self, number):
+#         real = self.real + number.real
+#         imag = self.imag + number.imag
+#         result = Complex(real, imag)
+#         return result
+#
+#
+# n1 = Complex(5, 4)
+# n2 = Complex(4, -3)
+# result = n1.add(n2)
+# print(result.real)
+# print(result.imag)
 
 
-    def __init__(self, real ,imag):
-        self.real =real
-        self.imag =imag
+class Triangle:
+    def __init__(self, a, b, c):
+        self.a = a
+        self.b = b
+        self.c = c
 
-    def add(self, number):
-        real = self.real+ number.real
-        imag = self.imag+ number.imag
-        result = Complex(real,imag)
-        return  result
+    def sum(self):
+        result = self.a + self.b + self.c
+        return result
 
 
-n1 = Complex(5,4)
-n2 = Complex(4, -3)
-result = n1.add(n2)
-print(result.real)
-print(result.imag)
+t1 = Triangle(3, 4, 5)
+res = t1.sum()
+print("The result is:", res)
