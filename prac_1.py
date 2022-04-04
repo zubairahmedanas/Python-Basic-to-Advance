@@ -121,17 +121,33 @@ p1["institute"] = "bits", "NC"
 # print(result.imag)
 
 
-class Triangle:
-    def __init__(self, a, b, c):
-        self.a = a
-        self.b = b
-        self.c = c
+# class Triangle:
+#     def __init__(self, a, b, c):
+#         self.a = a
+#         self.b = b
+#         self.c = c
+#
+#     def sum(self):
+#         result = self.a + self.b + self.c
+#         return result
+#
+#
+# t1 = Triangle(3, 4, 5)
+# res = t1.sum()
+# print("The result is:", res)
 
-    def sum(self):
-        result = self.a + self.b + self.c
-        return result
 
+class Animal:
+    def eat(self):
+        print("AN Animal can eat")
+class Dog(Animal):
+    def bark(self):
+        print("A Dog can Bark")
+    def beef(self):
+        print("A Dog love Beef")
 
-t1 = Triangle(3, 4, 5)
-res = t1.sum()
-print("The result is:", res)
+class Cat(Animal):
+    def milk(self):
+        print("A Cat  loves milk")
+dog1 = Dog()
+dog1.beef()
