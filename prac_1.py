@@ -137,17 +137,44 @@ p1["institute"] = "bits", "NC"
 # print("The result is:", res)
 
 
-class Animal:
-    def eat(self):
-        print("AN Animal can eat")
-class Dog(Animal):
-    def bark(self):
-        print("A Dog can Bark")
-    def beef(self):
-        print("A Dog love Beef")
+# class Animal:
+#     def eat(self):
+#         print("AN Animal can eat")
+# class Dog(Animal):
+#     def bark(self):
+#         print("A Dog can Bark")
+#     def beef(self):
+#         print("A Dog love Beef")
+#
+# class Cat(Animal):
+#     def milk(self):
+#         print("A Cat  loves milk")
+# dog1 = Dog()
+# dog1.beef()
 
-class Cat(Animal):
-    def milk(self):
-        print("A Cat  loves milk")
-dog1 = Dog()
-dog1.beef()
+
+class Polygon:
+    def __init__(self, sides):
+        self.sides = sides
+
+    def display(self):
+        print("A ploygon has two dimension")
+    def perimeter(self):
+        result = sum(self.sides)
+        return result
+
+class Triangle(Polygon):
+    def display(self):
+        print("A triangle has 3 edges")
+        # super().display()
+class Quadril(Polygon):
+    def display(self):
+        print("A quadril has 4 edges")
+        super().display()
+
+t1 = Quadril([3,4,5])
+res = t1.perimeter()
+print("the result is", res)
+t1.display()
+# t2 = Quadril()
+# t2.display()
