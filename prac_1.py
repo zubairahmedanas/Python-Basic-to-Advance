@@ -153,28 +153,38 @@ p1["institute"] = "bits", "NC"
 # dog1.beef()
 
 
-class Polygon:
-    def __init__(self, sides):
-        self.sides = sides
-
-    def display(self):
-        print("A ploygon has two dimension")
-    def perimeter(self):
-        result = sum(self.sides)
-        return result
-
-class Triangle(Polygon):
-    def display(self):
-        print("A triangle has 3 edges")
-        # super().display()
-class Quadril(Polygon):
-    def display(self):
-        print("A quadril has 4 edges")
-        super().display()
-
-t1 = Quadril([3,4,5])
-res = t1.perimeter()
-print("the result is", res)
-t1.display()
+# class Polygon:
+#     def __init__(self, sides):
+#         self.sides = sides
+#
+#     def display(self):
+#         print("A ploygon has two dimension")
+#     def perimeter(self):
+#         result = sum(self.sides)
+#         return result
+#
+# class Triangle(Polygon):
+#     def display(self):
+#         print("A triangle has 3 edges")
+#         # super().display()
+# class Quadril(Polygon):
+#     def display(self):
+#         print("A quadril has 4 edges")
+#         super().display()
+#
+# t1 = Quadril([3,4,5])
+# res = t1.perimeter()
+# print("the result is", res)
+# t1.display()
 # t2 = Quadril()
 # t2.display()
+
+try:
+    x1 = int(input("Enter a number: "))
+    x2 = int(input("Enter a number: "))
+
+    result = x1 / x2
+    print("The result is ", result)
+except:
+    print("pls enter bigger than zero")
+    print("The program ends")
