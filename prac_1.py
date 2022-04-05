@@ -179,12 +179,19 @@ p1["institute"] = "bits", "NC"
 # t2 = Quadril()
 # t2.display()
 
-try:
-    x1 = int(input("Enter a number: "))
-    x2 = int(input("Enter a number: "))
+# try:
+#     x1 = int(input("Enter a number: "))
+#     x2 = int(input("Enter a number: "))
+#
+#     result = x1 / x2
+#     print("The result is ", result)
+# except:
+#     print("pls enter bigger than zero")
+#     print("The program ends")
 
-    result = x1 / x2
-    print("The result is ", result)
-except:
-    print("pls enter bigger than zero")
-    print("The program ends")
+
+with open("my_file.txt","r") as f:
+    # f.write("\nlearning python")
+    # f.write(" File Handling: Create, Read & Write Files")
+    lines = f.readlines()
+    print(lines)
