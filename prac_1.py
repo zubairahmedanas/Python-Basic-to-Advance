@@ -230,12 +230,23 @@ p1["institute"] = "bits", "NC"
 # myprinter()
 
 
-def p_m(message):
-    gretting = "hello"
 
-    def pr():
-        print(gretting , message)
-    return pr
 
-fnc = p_m("how are u")
-fnc()
+def display_info(func):
+    def inner():
+        print("displaying", func.__name__, "function")
+        func()
+        print("task finished")
+
+    return inner
+
+
+# printer()
+
+@display_info
+def printer():
+    print("Hello world")
+# dec_func = display_info(printer)
+#
+# dec_func
+printer()
