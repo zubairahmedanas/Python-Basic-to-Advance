@@ -190,8 +190,52 @@ p1["institute"] = "bits", "NC"
 #     print("The program ends")
 
 
-with open("my_file.txt","r") as f:
-    # f.write("\nlearning python")
-    # f.write(" File Handling: Create, Read & Write Files")
-    lines = f.readlines()
-    print(lines)
+# with open("my_file.txt","r") as f:
+#     # f.write("\nlearning python")
+#     # f.write(" File Handling: Create, Read & Write Files")
+#     lines = f.readlines()
+#     print(lines)
+#
+# class Counter:
+#     def __init__(self):
+#         self.current = 0
+#
+#     def __getitem__(self, index):
+#         if isinstance(index, int):
+#             self.current += 1
+#             return self.current
+#
+#
+# counter = Counter()
+#
+# iterator = iter(counter)
+# print(type(iterator))
+
+# for _ in range(1, 4):
+#     print(next(iterator))
+
+# def print_msg(msg):
+#     msg = "hi there"
+#
+#     def printer():
+#         print(msg)
+#
+#     return printer
+#
+#
+# myprinter = print_msg("hello world")
+#
+# myprinter()
+#
+# myprinter()
+
+
+def p_m(message):
+    gretting = "hello"
+
+    def pr():
+        print(gretting , message)
+    return pr
+
+fnc = p_m("how are u")
+fnc()
